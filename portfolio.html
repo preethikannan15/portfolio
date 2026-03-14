@@ -1,0 +1,1031 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PREETHI K | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      background-color: black;
+      font-family: "Poppins", Arial, sans-serif;
+      color: gold;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      height: 14vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333333;
+      position: fixed;
+      z-index: 1000;
+      border-bottom: 2px solid gold;
+      padding: 0 20px;
+    }
+
+    nav h1 {
+      font-size: 30px;
+      color: #F7E7CE;
+      font-family: 'Times New Roman', Times, serif;
+      letter-spacing: 2px;
+      filter: drop-shadow(0px 0px 10px rgb(247, 81, 247));
+    }
+
+    .nav a {
+      color: gold;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 8px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      transition: all 0.3s ease;
+      font-weight: bolder
+    }
+
+    .nav a:hover {
+      color: #F7E7CE;
+      filter: drop-shadow(0px 0px 10px gold);
+      border-bottom: 2px solid gold;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 120px 20px 60px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .home {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding-bottom: 8px;
+  
+    }
+
+    .home-content {
+      width: 50%;
+      text-align: left;
+    }
+
+    .home-content span {
+      font-size: 20px;
+      color: goldenrod;
+      letter-spacing: 2px;
+    }
+
+    .home h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      color: whitesmoke;
+      filter: drop-shadow(0 0 12px rgb(255, 159, 255));
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .home h2 {
+      font-size: 22px;
+      margin-bottom: 18px;
+      color: goldenrod;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .about-me-home {
+      font-size: 18px;
+      color: #f5f5f5;
+      margin: 20px 0;
+      line-height: 1.6;
+      padding: 15px;
+      border-left: 3px solid gold;
+      background: rgba(255, 215, 0, 0.05);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .contactinfo {
+      font-size: 18px;
+      color: aliceblue;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .home-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 3px solid gold;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+      object-fit: cover;
+    }
+
+    .about {
+      background-color: #000;
+      color: white;
+      padding: 80px 10%;
+      text-align: left;
+      width: 100%;
+    }
+
+    .about h2 {
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #F7E7CE;
+      font-family: 'Times New Roman', Times, serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      border-bottom: 2px solid gold;
+    }
+
+    .about-content {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+
+    .about-box {
+      flex: 1;
+      min-width: 300px;
+      border: 2px solid gold;
+      border-radius: 15px;
+      padding: 30px;
+      background: rgba(255, 215, 0, 0.05);
+      transition: all 0.4s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+      background: rgba(255, 215, 0, 0.08);
+    }
+
+    .about-box h3 {
+      font-size: 24px;
+      color: gold;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 1px solid gold;
+      padding-bottom: 10px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .about-box p {
+      font-size: 18px;
+      margin-bottom: 18px;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    .about-box ul {
+      margin: 15px 0 20px 30px;
+    }
+
+    .about-box li {
+      font-size: 18px;
+      color: gold;
+      margin-bottom: 8px;
+      list-style-type: disc;
+    }
+
+    .about-box strong {
+      color: #F7E7CE;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 200px;
+      background: rgba(255, 215, 0, 0.1);
+      border: 2px dashed gold;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      color: #F7E7CE;
+      font-style: italic;
+      overflow: hidden;
+    }
+
+    .image-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .education {
+      text-align: center;
+      padding: 80px 20px;
+      width: 100%;
+      position: relative;
+    }
+
+    .education h1 {
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #F7E7CE;
+      font-family: 'Times New Roman', Times, serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 2px solid gold;
+    }
+
+    .edu_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .edu_card {
+      width: 60%;
+      border: 2px solid rgba(255, 215, 0, 0.3);
+      border-radius: 10px;
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      transition: all 0.6s ease;
+    }
+
+    .edu_card:hover {
+      transform: translateY(-5px);
+      border-color: gold;
+    }
+
+    .edu_card h2 {
+      color: gold;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .edu_card h3 {
+      color: lightgray;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .edu_card p {
+      color: azure;
+      font-size: 16px;
+    }
+
+    .skills {
+      width: 100%;
+      padding: 80px 20px;
+    }
+
+    .skills h1 {
+      margin-bottom: 50px;
+      font-size: 36px;
+      color: #F7E7CE;
+      font-family: 'Times New Roman', Times, serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 2px solid gold;
+      text-align: center;
+    }
+
+    .skill_box {
+      border: 1.5px solid gold;
+      border-radius: 10px;
+      padding: 20px;
+      transition: 0.3s ease;
+   
+    }
+
+    .skills_box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .skill_box:hover {
+      transform: translateX(-5px);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+    }
+
+    .skill_box h3 {
+      font-size: 20px;
+      color: gold;
+      border-bottom: 1px solid gold;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .skill_box li {
+      font-size: 16px;
+      color: aliceblue;
+      padding: 6px 0;
+    }
+
+    /* ===== Certificates Section ===== */
+    .certificates {
+      width: 100%;
+      padding: 80px 20px;
+    }
+
+    .certificates h1 {
+      margin-bottom: 50px;
+      font-size: 36px;
+      color: #F7E7CE;
+      font-family: 'Times New Roman', Times, serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 2px solid gold;
+      text-align: center;
+    }
+
+    .certificates-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .certificate-card {
+      border: 2px solid gold;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.4s ease;
+      background: rgba(255, 215, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+      background: rgba(255, 215, 0, 0.1);
+    }
+
+    .certificate-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: gold;
+    }
+
+    .certificate-card h3 {
+      font-size: 20px;
+      color: gold;
+      margin-bottom: 10px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .certificate-card p {
+      font-size: 16px;
+      color: #f5f5f5;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .certificate-card .issuer {
+      color: #F7E7CE;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .certificate-card .date {
+      color: lightgray;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .certificate-card .btn {
+
+      padding: 10px 15px;
+      background-color: gold;
+      color: black;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .certificate-card .btn:hover {
+      background-color: #ffc107;
+      transform: scale(1.05);
+    }
+
+    .resume {
+      padding: 80px 5%;
+      text-align: center;
+      width: 100%;
+    }
+
+    .resume h1 {
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #F7E7CE;
+      font-family: 'Times New Roman', Times, serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 2px solid gold;
+    }
+
+    .resume_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .resume_container img {
+      max-width: 80%;
+      border: 2px solid gold;
+      border-radius: 10px;
+    }
+
+    .download_btn {
+      padding: 12px 25px;
+      border-radius: 8px;
+      background-color: gold;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .download_btn:hover {
+      background-color: bisque;
+    }
+
+    .projects {
+      width: 100%;
+      height: 150vh;
+    }
+
+    .projects h1 {
+      margin-bottom: 50px;
+      font-size: 36px;
+      color: #F7E7CE;
+      font-family: 'Times New Roman', Times, serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 2px solid gold;
+      text-align: center;
+    }
+
+    .projects_boxs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+      width: 1200px;
+    }
+
+    .project_box {
+      border: 1.5px solid gold;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: left;
+      transition: 0.3s ease;
+      width: 40%;
+      
+    }
+
+    .project_box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+    }
+
+    .project_box h3 {
+      font-size: 20px;
+      color: gold;
+      border-bottom: 1px solid gold;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .project_box p {
+      font-size: 16px;
+      color: snow;
+      margin-bottom: 10px;
+    }
+
+    .project_box ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .project_box li {
+      color: gold;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .project_box .btn {
+      display: inline-block;
+      height: 35px;
+      width: 40%;
+      padding-left: 10px;
+      padding-top: 5px;
+      background-color: gold;
+      color: black;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .project_box .btn:hover {
+      background-color: #ffc107;
+      transform: scale(1.05);
+    }
+
+    .contact {
+      padding: 80px 5%;
+      text-align: center;
+      width: 100%;
+    }
+
+    .contact h1 {
+      margin-bottom: 40px;
+      font-size: 36px;
+      color: #F7E7CE;
+      font-family: 'Times New Roman', Times, serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 2px solid gold;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .contact-info {
+      width: 50%;
+      text-align: left;
+      padding: 30px;
+      border: 2px solid gold;
+      border-radius: 15px;
+      background: rgba(255, 215, 0, 0.05);
+    }
+
+    .contact-info h3 {
+      font-size: 24px;
+      color: gold;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 1px solid gold;
+      padding-bottom: 10px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contact-info p {
+      font-size: 18px;
+      color: #f5f5f5;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .contact-info strong {
+      color: #F7E7CE;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      padding: 30px;
+      border: 2px solid gold;
+      border-radius: 15px;
+      background: rgba(255, 215, 0, 0.05);
+    }
+
+    .contact-form h3 {
+      font-size: 24px;
+      color: gold;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 1px solid gold;
+      padding-bottom: 10px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 16px;
+      color: #F7E7CE;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid gold;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      font-size: 16px;
+      font-family: "Poppins", Arial, sans-serif;
+      transition: all 0.3s ease;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #ffc107;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+      background: rgba(0, 0, 0, 0.9);
+    }
+    .submit-btn {
+      height: 50px;
+      border-radius: 8px;
+      background-color: gold;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      background-color: #ffc107;
+      transform: scale(1.02);
+    }
+
+    footer {
+      background-color: #333333;
+      color: gold;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border-top: 3px solid gold;
+      padding: 20px 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin-bottom: 8px;
+    }
+
+    footer>.social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+      color: #f5f5f5;
+    }
+
+    footer .social-icons a img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease;
+      color: azure;
+    }
+
+    footer .social-icons a:hover img {
+      transform: scale(1.1);
+      
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    span {
+      color: gold;
+      font-weight: bolder;
+      font-size: 40px;
+      padding-bottom: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      letter-spacing: 4px;
+    }
+
+   .social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); 
+    margin-left: 15px;
+    transition: transform 0.3s ease;
+    margin-top: 40px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.3);
+  filter: drop-shadow(10px 10px 10x gold);
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>PORTFOLIO</h1>
+    <div class="nav">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#resume">RESUME</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+    <div class="home-content">
+      <span>HI I'M</span>
+      <h1>PREETHI K</h1>
+      <h2>CLOUD SUPPORT | NETWORK ADMINISTRATOR</h2>
+      
+
+      <div class="about-me-home">
+        Motivated and detail-oriented AWS Cloud and Network Administrator with a strong foundation in cloud infrastructure management, networking, and system administration. Experienced in deploying, managing, and optimizing cloud environments on Amazon Web Services, ensuring secure and reliable network connectivity. Skilled in monitoring system performance, implementing security best practices, and troubleshooting cloud and network-related issues to maintain high availability and operational efficiency.
+      </div>
+      
+      <div class="contactinfo">
+        8680031221 | preethi2004915@gmail.com | Madurai
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/preethi-kannan15/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/preethikannan15" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+        </a>
+                <a href="https://www.instagram.com/preethi_kannan15?igsh=MTVsaGI4azhnaHZ6aQ==" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+     </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-box">
+        <h3>Professional Background</h3>
+                <p>
+I am a <strong>B.Sc. Networking graduate</strong> from <strong>Subbalakshmi Lakshmipathi College of Science</strong> with a strong interest in <strong>Cloud Computing, Networking, and DevOps technologies</strong>. I have hands-on internship experience in <strong>AWS Cloud Computing</strong>, where I supported cloud infrastructure, deployment processes, and system maintenance.
+</p>
+
+<p>
+During my internship, I worked with technologies such as <strong>AWS Cloud Services</strong>, <strong>CI/CD Pipeline</strong>, <strong>Cloud Deployment</strong>, <strong>Selenium Automation Testing</strong>, <strong>Linux Commands</strong>, and <strong>GitHub</strong>. I am passionate about building reliable cloud environments and continuously improving my skills in modern cloud technologies.
+</p>        <p><strong>Projects:</strong></p>
+<ul>
+<li><strong>Car Rental Portal Deployment with CI/CD</strong> – Deployed a PHP-based car rental web application on AWS EC2 and automated deployment using GitHub CI/CD pipeline.</li>
+
+<li><strong>PHP Application Deployment using GitLab CI/CD</strong> – Implemented a CI/CD pipeline using GitLab to deploy a PHP and MySQL web application on an EC2 server.</li>
+
+<li><strong>Roundcube Webmail Server Setup</strong> – Installed and configured Roundcube webmail with Apache, MariaDB, Postfix and Dovecot for secure email communication.</li>
+</ul>
+      <div class="about-box">
+  <h3>Internship & Current Focus</h3>
+
+    <p>
+    I completed a <strong>3-month internship</strong> at <strong>Nervygrid, Madurai</strong> as a 
+    <strong>Cloud Support Intern</strong>. During this internship, I worked with 
+    <strong>AWS Cloud Services</strong>, <strong>CI/CD Pipeline</strong>, 
+    <strong>Cloud Deployment</strong>, and <strong>Automation Testing</strong>, 
+    supporting cloud infrastructure setup and deployment processes.
+  </p>
+
+  <p>
+    Currently, I am pursuing <strong>M.Sc Computer Science</strong> and focusing on 
+    developing my skills in <strong>Cloud Computing, Networking, and DevOps technologies</strong>.
+  </p>
+
+  <ul>
+    <li><strong>AWS Cloud Services:</strong> EC2, S3 and cloud deployment</li>
+    <li><strong>DevOps:</strong> CI/CD Pipeline and deployment automation</li>
+    <li><strong>System Administration:</strong> Linux commands and server configuration</li>
+    <li><strong>Version Control:</strong> GitHub and GitLab</li>
+    <li><strong>Automation Testing:</strong> Selenium basics</li>
+  </ul>
+
+  <p>
+    I am continuously improving my knowledge in modern cloud environments and 
+    gaining practical experience through hands-on projects and deployments.
+  </p>
+</div>  </section>
+
+ <section id="education" class="education">
+  <h1>Education</h1>
+
+  <div class="edu_container">
+
+    <div class="edu_card">
+      <h2>LATHA MATHAVAN ARTS AND SCIENCE COLLEGE</h2>
+      <h3>M.Sc Computer Science (2025 - 2027)</h3>
+      <p>Madurai</p>
+    </div>
+
+    <div class="edu_card">
+      <h2>SUBBALAKSHMI LAKSHMIPATHY COLLEGE OF SCIENCE</h2>
+      <h3>B.Sc Networking (2022 - 2025)</h3>
+      <p>Madurai</p>
+    </div>
+
+    <div class="edu_card">
+      <h2>ST. ANNE'S GIRLS HIGHER SECONDARY SCHOOL</h2>
+      <h3>HSC (2021 - 2022)</h3>
+      <p>Madurai</p>
+    </div>
+
+  </div>
+</section>
+  <section id="skills" class="skills">
+    <h1>Skills</h1>
+    <div class="skills_box">
+      <div class="skill_box">
+        <h3>Networking</h3>
+        <ul>
+          <li>IP Addressing & Subnetting</li>
+          <li>LAN, WAN & MAN Concepts</li>
+          <li>Routing & Switching (Cisco)</li>
+          <li>OSI & TCP/IP Models</li>
+          <li>Network Topologies</li>
+          <li>Network Troubleshooting</li>
+          <li>Firewall & Security Basics</li>
+          <li>Linux Network Commands</li>
+        </ul>
+        </div>
+     <div class="skill_box">
+      <h3>Cloud & DevOps</h3>
+      <ul>
+<li>AWS Cloud Services</li>
+<li>CI/CD Pipeline</li>
+<li>Cloud Deployment</li>
+<li>Cloud Infrastructure Support</li>
+<li>Deployment Support</li>
+<li>Automation Testing</li>
+<li>Linux System Administration</li>
+<li>Git & GitHub Version Control</li>
+</ul>     </div>     
+    <div class="skill_box">
+<h3>Tools & Technologies</h3>
+<ul>
+<li>Selenium</li>
+<li>Roundcube Mail</li>
+<li>PHP & NGINX</li>
+<li>GitHub & Gitlab</li>
+<li>Linux Commands</li>
+<li>System Monitoring</li>
+<li>AWS Management Console</li>
+<li>Web Server Configuration</li>
+</ul></div>     
+         </section>
+
+  
+  <section id="resume" class="resume">
+    <h1>RESUME</h1>
+    <div class="resume_container">
+          <a class="download_btn" href="./resume.pdf" download>Download Resume</a>
+    </div>
+  </section>
+
+ <section id="projects" class="projects">
+  <h1>PROJECTS</h1>
+
+ <div class="project_box">
+
+<h3>Car Rental Portal Deployment with CI/CD</h3>
+
+
+<p><strong>Tools Used:</strong> AWS EC2, GitHub, CI/CD Pipeline, PHP</p>
+
+<p><strong>Overview:</strong>
+Deployed a PHP-based Car Rental web application on AWS EC2 and automated the deployment process using a CI/CD pipeline with GitHub.
+</p>
+
+<p><strong>Features:</strong></p>
+
+<ul>
+<li>Automated deployment using GitHub CI/CD</li>
+<li>AWS EC2 server configuration</li>
+<li>Web application hosting on cloud</li>
+</ul>
+
+<!-- Click to view screenshot -->
+<a href="car-rental.png" target="_blank" class="btn">
+View Project Output
+</a>
+
+</div>
+
+    <div class="project_box">
+  <h3>PHP Application Deployment using GitLab CI/CD</h3>
+
+  <p><strong>Tools Used:</strong> GitLab, AWS EC2, PHP, MySQL</p>
+
+  <p><strong>Overview:</strong>
+  Implemented a GitLab CI/CD pipeline to automate the deployment of a PHP and MySQL web application on an AWS EC2 server.
+  </p>
+
+  <p><strong>Features:</strong></p>
+
+  <ul>
+    <li>CI/CD pipeline automation using GitLab</li>
+    <li>Cloud server deployment</li>
+    <li>Application hosting and testing</li>
+  </ul>
+
+  <a href="gitlab.png" target="_blank" class="btn">View Project Output</a>
+
+</div>
+
+    <div class="project_box">
+  <h3>Roundcube Webmail Server Setup</h3>
+
+  
+  <p><strong>Tools Used:</strong> Linux, Apache, MariaDB, Postfix, Dovecot</p>
+
+  <p><strong>Overview:</strong> Installed and configured Roundcube Webmail on a Linux server with Apache web server, MariaDB database, and Postfix/Dovecot mail services.</p>
+
+  <p><strong>Features:</strong></p>
+
+  <ul>
+    <li>Webmail server configuration</li>
+    <li>Email sending and receiving setup</li>
+    <li>Linux server administration</li>
+  </ul>
+
+  <a href="roundcube.png" target="_blank" class="btn">View Project Output</a>
+
+</div>  </section>
+<section id="contact" class="contact">
+    <h1>Contact</h1>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p><strong>Phone:</strong> 8680031221</p>
+        <p><strong>Email:</strong> preethi2004915@gmail.com</p>
+        <p><strong>Location:</strong> Madurai, India</p>
+        <p>Feel free to reach out to me for any opportunities, collaborations. I'm always open to discussing new projects and creative ideas.</p>
+      </div>
+      
+      
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 PREETHI K . All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/preethi-kannan15/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/preethikannan15" target= "_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+           <a href="https://www.instagram.com/preethi_kannan15?igsh=MTVsaGI4azhnaHZ6aQ%3D%3D" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
+</html>
