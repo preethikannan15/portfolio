@@ -341,98 +341,6 @@
       padding: 6px 0;
     }
 
-    /* ===== Certificates Section ===== */
-    .certificates {
-      width: 100%;
-      padding: 80px 20px;
-    }
-
-    .certificates h1 {
-      margin-bottom: 50px;
-      font-size: 36px;
-      color: #F7E7CE;
-      font-family: 'Times New Roman', Times, serif;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      border-bottom: 2px solid gold;
-      text-align: center;
-    }
-
-    .certificates-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 25px;
-      width: 100%;
-      max-width: 1200px;
-    }
-
-    .certificate-card {
-      border: 2px solid gold;
-      border-radius: 15px;
-      padding: 20px;
-      text-align: center;
-      transition: all 0.4s ease;
-      background: rgba(255, 215, 0, 0.05);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-    }
-
-    .certificate-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
-      background: rgba(255, 215, 0, 0.1);
-    }
-
-    .certificate-icon {
-      font-size: 40px;
-      margin-bottom: 15px;
-      color: gold;
-    }
-
-    .certificate-card h3 {
-      font-size: 20px;
-      color: gold;
-      margin-bottom: 10px;
-      font-family: 'Times New Roman', Times, serif;
-    }
-
-    .certificate-card p {
-      font-size: 16px;
-      color: #f5f5f5;
-      margin-bottom: 15px;
-      line-height: 1.5;
-    }
-
-    .certificate-card .issuer {
-      color: #F7E7CE;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .certificate-card .date {
-      color: lightgray;
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    .certificate-card .btn {
-
-      padding: 10px 15px;
-      background-color: gold;
-      color: black;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s ease;
-      margin-top: 10px;
-    }
-
-    .certificate-card .btn:hover {
-      background-color: #ffc107;
-      transform: scale(1.05);
-    }
 
     .resume {
       padding: 80px 5%;
@@ -479,9 +387,9 @@
       background-color: bisque;
     }
 
-    .projects {
-      width: 100%;
-      min-height: 150vh;
+    .project_box{
+      width:100%;
+      max-width:500px;
     }
 
     .projects h1 {
@@ -495,14 +403,15 @@
       text-align: center;
     }
 
-    .projects_boxs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 25px;
-      justify-content: center;
-      width: 1200px;
-    }
-
+      .projects_boxs{
+        display:flex;
+        flex-wrap:wrap;
+        gap:25px;
+        justify-content:center;
+        max-width:1200px;
+        width:100%;
+     }
+      
     .project_box {
       border: 1.5px solid gold;
       border-radius: 10px;
@@ -758,11 +667,60 @@
   filter: drop-shadow(10px 10px 10x gold);
 }
 
+.project_box{
+width:40%;
+border:2px solid gold;
+border-radius:10px;
+padding:25px;
+}
 
 
+/* ADD THIS AT THE BOTTOM */
+
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+height:auto;
+padding:10px;
+}
+
+.nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.home{
+flex-direction:column;
+text-align:center;
+height:auto;
+}
+
+.about-content{
+flex-direction:column;
+}
+
+.edu_card{
+width:90%;
+}
+
+.project_box{
+width:100%;
+}
+
+.projects_boxs{
+width:100%;
+}
+
+.contact-info{
+width:100%;
+}
+
+}
 
 
-  </style>
+s </style>
 </head>
 <body>
   <nav>
